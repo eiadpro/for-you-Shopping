@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width:1000px;*/
+    height: 705px; 
+    background-image: linear-gradient(to top , rgb(128 131 131)  , rgb(219, 219, 219));
+}
+
+
+.form{
+    box-shadow: 16px 16px 16px 16px #818181;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    background-image: ( to bottom , rgb(255, 229, 229) , rgb(183 188 187) , black);
+    border: 3px solid #cacaca ;
+    border-style: inset;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    border-radius: 50%;
+}
+.name{
+    display: inline-flex;
+}
+.pass{
+    display: inline-flex;
+}
+input{
+    border-bottom-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    height: 35px;
+    width: 195px;
+    border-radius: 10px ;
+}
+/* label{
+    margin-top: 10px;
+    margin-right: 5px ;
+    font-size: 20px;
+} */
+
+input:hover{
+    cursor: pointer ;
+
+}
+input:focus{
+    box-shadow: 0px 0px 16px 3px floralwhite ;   
+    outline: none;
+    cursor: text ;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(42, 40, 40);
+    /* border: none; */
+    background-color: #ffffff5d;
+}
+button:hover{
+    background-color: white;
+    transition: ease-in .3s;
+}
+.point{
+    cursor: pointer;
+}
+.do{
+    font-size: 23px;
+}

@@ -1,0 +1,218 @@
+body{   
+    background-image: linear-gradient( to right , #3d3d3d , rgb(183 188 187) , #3d3d3d);
+    margin: 0px;
+}
+
+
+
+
+nav{
+    /* background-color: darkturquoise; */
+    background-image: linear-gradient( to right, #37474f, rgb(204, 204, 204) );
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home,
+.about,
+.contact,
+.sign,
+.register{
+    padding: 10px;
+    display: inline-block;
+    justify-content: center;
+    transition: all ease 0.3s;
+    
+  
+}
+.home_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.home_link:hover{
+    color: beige;
+}
+.about_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.about_link:hover{
+    color: beige;
+}
+
+.sign_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.sign_link:hover{
+    color: beige;
+}
+
+
+.register_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.register_link:hover{
+    color: beige;
+}
+
+
+
+
+.home:hover,
+.about:hover,
+.contact:hover,
+.sign:hover,
+.register:hover{
+    text-shadow: 0px 0px 1px black;
+    border-radius: 30%;
+    box-shadow: 0px 16px 6px 0px rgba(65, 96, 100, 0.2);
+    color: beige   ;
+    cursor: pointer ;
+
+
+}
+
+
+.users_control {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control{
+    /* display: flex; */
+    /* justify-content: center; */
+    box-shadow: 3px 19px 20px 20px #00695c;
+    border-radius: 10px;
+    width: 1100px;
+    height: 500px;
+    background-image: linear-gradient(45deg, #00000047, #263238);
+
+}
+
+.control span{
+    margin-left: 42%;
+    height: 20px;
+    font-size: 20px;
+    color: bisque;
+    border-bottom: 2px dashed ;
+}
+
+.manager{
+    
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    height: 100px;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
+.contain{
+    
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 456px;
+    align-items: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 250px;
+    /* background-color: black; */
+    background-image: linear-gradient(to bottom , rgb(52, 48, 48) , rgb(23, 20, 20));
+    color: aliceblue;
+}
+.footer_all{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_logo,
+.services,
+.footer_contact{
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 2%;
+    font-size: large;
+}
+.social{ 
+    height: 100px;
+    /* background-color: rgb(0 0 0 / 94%); */
+    background-image: linear-gradient( to bottom ,  rgb(23, 20, 20) ,  rgb(14, 13, 13));
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+
+.privacy{
+    height: 50px;
+    /* background-color: #000000e1;  */
+    background-image: linear-gradient( to bottom ,  rgb(14, 13, 13) , black);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div .services a:hover,
+.abo:hover,
+.about_footer_link:hover{
+    
+    color: chartreuse;
+    cursor: pointer;
+
+
+}
+div .services a,
+.about_footer_link{
+    text-decoration: none;
+    color: white;
+}
+.serv{
+    color: red;
+    font-size: 50px;
+}
+.del{
+    cursor: pointer;
+}

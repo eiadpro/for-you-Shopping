@@ -1,0 +1,318 @@
+body{   
+    /* background-color: #eee; */
+    background-image: linear-gradient( to bottom , rgb(255, 229, 229) , rgb(183 188 187) , black);
+    margin: 0px;
+}
+
+
+
+
+nav{
+    /* background-color: darkturquoise; */
+    background-image: linear-gradient( to right, #37474f, rgb(204, 204, 204) );
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home,
+.about,
+.contact,
+.sign,
+.register{
+    padding: 10px;
+    display: inline-block;
+    justify-content: center;
+    transition: all ease 0.3s;
+    
+    
+}
+.home_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.home_link:hover{
+    color: beige;
+}
+.about_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.about_link:hover{
+    color: beige;
+}
+
+
+.register_link{
+    
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.register_link:hover{
+    color: beige;
+}
+
+
+
+
+.home:hover,
+.about:hover,
+.contact:hover,
+.sign:hover,
+.register:hover{
+    text-shadow: 0px 0px 1px black;
+    border-radius: 30%;
+    box-shadow: 0px 16px 6px 0px rgba(65, 96, 100, 0.2);
+    color: beige   ;
+    cursor: pointer ;
+
+
+}
+.slide1{
+    display: flex;
+    justify-content: center;
+}
+.im1:hover{
+    opacity: 100%;
+    
+}
+.sites{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;  
+    margin-left: 10%;
+    margin-right: 10%; 
+
+
+}
+.clothes,
+.accessories,
+ .boots{
+  /*  background-color: darkturquoise;
+    border-radius: 20%;
+    padding: 50px;
+    display: inline-block; */
+    /* background-color: #77858c; */
+    border-radius: 20%;
+    padding: 50px;
+    display: inline-block;
+    color: beige;
+}
+.Clothes_Site,
+.Accesories_Site,
+.Boots_Site{
+    border-radius: 50%;
+}
+
+.description{
+    text-align: center  ;
+}
+span{
+    font-size: 50px;
+}
+.access{
+    font-size: 40px;
+
+}
+.clothes:hover,
+.accessories:hover,
+.boots:hover{
+    box-shadow: 16px 16px 16px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+footer{
+    height: 250px;
+    /* background-color: black; */
+    background-image: linear-gradient(to bottom , rgb(52, 48, 48) , rgb(23, 20, 20));
+    color: aliceblue;
+}
+.footer_all{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_logo,
+.services,
+.footer_contact{
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 2%;
+    font-size: large;
+}
+.social{ 
+    height: 100px;
+    /* background-color: rgb(0 0 0 / 94%); */
+    background-image: linear-gradient( to bottom ,  rgb(23, 20, 20) ,  rgb(14, 13, 13));
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+
+.privacy{
+    height: 50px;
+    /* background-color: #000000e1;  */
+    background-image: linear-gradient( to bottom ,  rgb(14, 13, 13) , black);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div .services a:hover,
+.abo:hover,
+.about_footer_link:hover{
+    
+    color: chartreuse;
+    cursor: pointer;
+
+
+}
+div .services a,
+.about_footer_link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.info{    
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+}
+/* .im1{
+    width: 100%;
+    height: 100%;
+} */
+/* .content{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: rgb(0 0 0 / 77%);
+    transition: 0.7s;
+    color: palegoldenrod;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+/* .info:hover .content{
+    top: 0%;
+} */
+/* button{
+    border-radius: 10px;
+    background-color: rgb(190, 43, 43);
+    color:chartreuse;
+    font-weight: bold;
+} */
+
+
+
+/* a{
+    text-decoration: none;
+    color: black;
+} */
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+} */
+.main{
+display: flex;
+align-content: space-around;
+    justify-content: center;
+}
+
+.slider img{
+    width: 1200px;
+    height: 500px;
+    border-radius: 8px;
+}
+/* body{
+    width: 98vw;
+    height: 100vw;
+    background-image: linear-gradient(to right , rgb(114, 102, 102), rgb(31, 24, 24));
+} */
+/* .container{
+    width: 800px;
+    height: 450px;
+    background-image: linear-gradient( to bottom , rgb(78, 77, 77) , rgb(52, 43, 43)) ;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    border-radius: 10px;
+} */
+.inner-container{
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slider{
+    display: inline-flex;
+    transition: all 1s;
+
+}
+.btns{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50% , 50%);
+    border: transparent;
+}
+.btns button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 5px;
+    cursor: pointer;
+
+
+}
+.btns button:nth-child(1){
+    background-color: white;
+}
+.sign_link{
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.sign_link:hover{
+    color: beige;
+}
+.serv{
+    color: red;
+    font-size: 50px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="Register_Style.css">
+</head>
+
+<body>
+    <script src="script.js">
+
+    </script>
+    <script>
+        function submit_clicked() {
+            var x = true;
+            var all = false;
+
+            if (document.forms.fir.value == "" || document.forms.las.value == "" || document.forms.use.value == "" ||
+            document.forms.ema.value == "" || document.forms.pas.value == "" || document.forms.pas1.value == "" ||
+            document.forms.pho.value == "" || document.forms.no3.value == "")
+            {
+                all = false;
+                x = false;
+                alert("you should fill all fields");
+            }
+            else{
+                all = true;
+            }
+            if (document.forms.pas1.value != document.forms.pas.value) {
+                x = false;
+                alert("confirm password is not equal to password");
+            }
+            for (const key in localStorage) {
+                // Skip built-in properties like length, setItem, etc.
+                if (document.forms.use.value == key && all) {
+                    console.log(`${key}: ${localStorage.getItem(key)}`);
+                    x = false;
+                    alert("your username is already used");
+                }
+            }
+            if (x && all) {
+                localStorage.setItem(document.forms.use.value, document.forms.pas.value);
+
+                location.href = "login.html";
+            }
+            return x;
+        }
+    </script>
+    <header> <img src="new_logo.PNG"></header>
+    <div class="main_register">
+        <form action="" method="post" name="forms">
+
+            <fieldset>
+                <label for="first">First Name : </label><input type="text" id="first"
+                    placeholder="enter your first name" name="fir" required>
+                <label for="last"> Last Name : </label><input type="text" id="last" placeholder="enter your last name"
+                    name="las" required><br><br>
+                <label for="user"> username : </label><input type="text" id="user" placeholder="enter username"
+                    name="use" required ><br><br>
+                <label for="email">Email : </label><input type="email" id="email" placeholder="enter the email"
+                    name="ema" required><br><br>
+                <label for="password">password : </label><input type="password" id="password"
+                    placeholder="enter complex password" name="pas" required><br><br>
+                <label for="password1">Confirm password : </label><input type="password" id="password1"
+                    placeholder="confirm password" name="pas1" required><br><br>
+                <label for="phone">phone : </label><input type="text" id="phone" placeholder="enter your phone number "
+                    name="pho" required><br><br>
+                <label>gender : </label> <br><br><input type="radio" id="gender" name="no3" class="point"
+                    required><label for="gender">male</label>
+                <input type="radio" id="gender1" name="no3" class="point" required><label
+                    for="gender1">female</label><br><br>
+                <hr>
+                <a href="login.html">
+                    <button type="button" class="point" onclick="return submit_clicked()">Click here </button>
+                </a>
+                </th>
+            </fieldset>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
